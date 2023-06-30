@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="all">
+    <meta name="format-detection" content="telephone=no">
+    <title>Spring RoadMap</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="images/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/public/image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="fonts/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/public/image/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="js/l.js" async></script>
+</head>
+
+<body>
+    <style>
+        #mainloader,
+        body {
+            overflow: hidden
+        }
+
+        body,
+        html {
+            background: #050505
+        }
+
+        #mainloader {
+            background: #0c070a;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            text-align: center;
+            top: 0;
+            width: 100%;
+            z-index: 9999999
+        }
+
+        #mainloader .cssload-container {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 100%;
+            text-align: center
+        }
+
+        #mainloader .cssload-logo {
+            animation: 1.25s linear infinite forwards breath;
+            -o-animation: 1.25s linear infinite forwards breath;
+            -ms-animation: 1.25s linear 0s infinite normal forwards running breath;
+            -webkit-animation: 1.25s linear infinite forwards breath;
+            -moz-animation: 1.25s linear infinite forwards breath;
+            background: url(images/favicon-194x194.png) center center/contain no-repeat;
+            display: inline-block;
+            height: 150px;
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            top: -75px;
+            width: 150px
+        }
+
+        @keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-o-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-ms-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-moz-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <script>if (typeof global === 'undefined') global = {}; global['hash'] = 'UU80NmM5OTNMK3prODYyQlVnWmRzWHAvcGpocVc3eWpNWWZNZzcwcG9zUmhkUlI2aWJyMVN3Z1hDQlAwcW5tQ21keHFGNmltbDdObkFTZ3ROekwycFlPamozY2w3QkNjMjR5b2VSQkNLblRHNTkzdS9zdnY1TWxKTE4yenFHdTA='; global['time'] = 1687112927; setInterval(function () { ++global['time']; }, 1000);</script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "c03a8d4a-c2e5-49a8-a935-33d4d94eee52"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })(); CRISP_RUNTIME_CONFIG = { session_merge: true };</script>
+    <script
+        type="text/javascript">$crisp.push(["set", "session:data", ["Ident", "eaf24862-942b-472f-9197-d57f9a5e07af"]]);</script>
+    <div id="mainloader">
+        <div class="cssload-container">
+            <div class="cssload-logo"></div>
+        </div>
+    </div>
+    <script>if (typeof global['app'] === 'undefined') global['app'] = {}; global['app']['id'] = '6'; if (typeof global['lang'] === 'undefined') global['lang'] = {}; if (typeof global['lang']['public'] === 'undefined') global['lang']['public'] = {}; if (typeof global['lang']['public']['news-view'] === 'undefined') global['lang']['public']['news-view'] = {}; global['lang']['public']['news-view']['close'] = `Close`; global['lang']['public']['news-view']['reaction-1'] = `Reaction`; global['lang']['public']['news-view']['reaction-2'] = `Reactions`; global['lang']['public']['news-view']['reaction-5'] = `Reactions`;</script>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="basic"><a class="logo" href="/"><img src="images/favicon-194x194.png" alt="OIGGIO"></a>
+                        <div class="language">
+                            <div class="actual"><img src="fonts/en.svg" alt="en"><span>en</span></div>
+                            <div class="list">
+                                <div class="scrollable">
+                                    <div class="item" data-enabled="1" data-lang="en"><img
+                                            src="fonts/en.svg"><span>en</span></div>
+                                    <div class="item" data-enabled="1" data-lang="es"><img
+                                            src="fonts/es.svg"><span>es</span></div>
+                                    <div class="item" data-enabled="1" data-lang="pt"><img
+                                            src="fonts/pt.svg"><span>pt</span></div>
+                                    <div class="item" data-enabled="1" data-lang="ru"><img
+                                            src="fonts/ru.svg"><span>ru</span></div>
+                                    <div class="item" data-enabled="0" data-lang="cn"><img
+                                            src="fonts/cn_1.svg"><span>cn</span></div>
+                                    <div class="item" data-enabled="0" data-lang="ar"><img
+                                            src="fonts/ar_1.svg"><span>ar</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.49762 12H12.4976" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.49762 16.0017H16.4976" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.49731 7.99832H19.4973" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span>Navigation</span>
+                            <div class="list">
+                                <div class="items"><a class="item" href="/">Home</a><a class="item"
+                                        href="/roadmap">RoadMap</a><a class="item" href="/contest">Contest</a><a
+                                        class="item" href="/stat">Statistics</a><a class="item" href="/term">Rules</a><a
+                                        class="item" href="/help">Help</a></div>
+                            </div>
+                        </div>
+                        <div class="withdrawals">
+                            <div class="icon"></div>
+                            <div class="other"><a href="/stat">Payouts</a>
+                                <div class="total">Total $275946.63</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div class="btn btn--login"><a href="/auth">Login</a></div>
+                        <div class="btn btn--register"><a href="/signup">Signup</a></div>
+                        <div class="mobile-trigger">
+                            <div class="icon"><span></span><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="mobile-shell">
+                        <div class="mobile-btns">
+                            <div class="btn btn--register"><a href="/signup">Signup</a></div>
+                            <div class="btn btn--login"><a href="/auth">Login to Account</a></div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="li-earned"><a class="title" href="/">
+                                        <div class="icon icon--home"></div>Home
+                                    </a></li>
+                                <li><a class="title" href="/roadmap">
+                                        <div class="icon icon--roadmap"></div>RoadMap
+                                    </a></li>
+                                <li><a class="title" href="/contest">
+                                        <div class="icon icon--contest"></div>Contest
+                                    </a></li>
+                                <li><a class="title" href="/stat">
+                                        <div class="icon icon--stat"></div>Statistics
+                                    </a></li>
+                                <li><a class="title" href="/term">
+                                        <div class="icon icon--terms"></div>Rules
+                                    </a></li>
+                                <li><a class="title" href="/help">
+                                        <div class="icon icon--help"></div>Help
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="no-lang" data-lang="cn">
+            <div class="shell"><img src="fonts/cn.svg">
+                <div class="title">目前中文语言不可用...</div>
+                <div class="text">我们已经开始在网站上添加中文语言。我们一定会在添加完成后告知所有玩家。</div><a href="javascript:void(0)"
+                    data-action="close">好的，我会等待</a>
+            </div>
+        </div>
+        <div class="no-lang" data-lang="ar">
+            <div class="shell"><img src="fonts/ar.svg">
+                <div class="title">اللغة العربية غير متاحة حاليا...</div>
+                <div class="text">نحن نعمل بالفعل على إضافة اللغة العربية إلى الموقع. سنخبر بالتأكيد جميع اللاعبين عندما
+                    نضيفها.</div><a href="javascript:void(0)" data-action="close">حسنا، سأنتظر</a>
+            </div>
+        </div>
+        <div class="content"><img src="images/roadmap-full-bg.png" class="roadmap-background">
+            <section class="head">
+                <div class="container" data-mobile-post="0">
+                    <div class="side side--left">
+                        <div class="sticky">
+                            <div class="logo"><img src="images/favicon-194x194.png"></div>
+                            <nav><a class="item" href="/">Home</a><a class="item" href="/roadmap">RoadMap</a><a
+                                    class="item" href="/contest">Contest</a><a class="item"
+                                    href="/stat">Statistics</a><a class="item" href="/term">Rules</a><a class="item"
+                                    href="/help">Help</a></nav>
+                        </div>
+                    </div>
+                    <div class="side side--right">
+                        <div class="sticky"><a class="reg" href="/signup" target="_blank">Signup</a>
+                            <div class="social"><a class="item item--channel" href="#"
+                                    target="_blank"></a><a class="item item--chat" href="#"
+                                    target="_blank"></a><a class="item item--support" href="/help" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <h1>Spring RoadMap</h1><time datetime="2023-03-01">01 March</time>
+                        <div class="art"><img class="dashed" src="fonts/roadmap-post-dashed.svg"><svg
+                                viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#F796FF"
+                                    d="M47.5,-67.2C55.9,-59.3,53.2,-37.9,56.7,-20.1C60.2,-2.3,69.9,11.8,70.8,27.3C71.7,42.9,63.8,59.9,50.6,64.4C37.3,68.9,18.6,60.8,-0.3,61.2C-19.3,61.6,-38.6,70.7,-53.5,66.7C-68.4,62.8,-78.9,45.9,-78.8,29.5C-78.7,13.2,-67.9,-2.7,-59.8,-16.8C-51.6,-31,-46,-43.3,-36.5,-50.9C-27,-58.4,-13.5,-61.1,3,-65.2C19.6,-69.4,39.1,-75.1,47.5,-67.2Z"
+                                    transform="translate(100 100)" />
+                            </svg><img class="post-image" src="images/08992f0d-d6ad-4a8f-ab52-0856450b366c.png"></div>
+                        <div class="actions">
+                            <div class="goto">
+                                <div class="title">Tags</div>
+                                <div class="shell">
+                                    <div class="item">Important event</div>
+                                </div>
+                                <div class="title mt">Follow us</div>
+                                <div class="shell"><a class="item" href="#"
+                                        target="_blank">Telegram Channel</a><a class="item"
+                                        href="#" target="_blank">Telegram Chat</a></div>
+                            </div>
+                            <div class="reactions">
+                                <div class="all">
+                                    <div class="value">15.3K+</div>
+                                    <div class="desc">Reactions</div>
+                                </div>
+                                <div class="emoji" data-type="2">
+                                    <div class="emoji__heart"></div>
+                                    <div class="count"><span>6.14K</span></div>
+                                </div>
+                                <div class="emoji" data-type="1">
+                                    <div class="emoji__hand">
+                                        <div class="emoji__thumb"></div>
+                                    </div>
+                                    <div class="count"><span>3.79K</span></div>
+                                </div>
+                                <div class="emoji" data-type="4">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>1.71K</span></div>
+                                </div>
+                                <div class="emoji" data-type="5">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>1.28K</span></div>
+                                </div>
+                                <div class="emoji" data-type="3">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth">
+                                            <div class="emoji__tongue"></div>
+                                        </div>
+                                    </div>
+                                    <div class="count"><span>993</span></div>
+                                </div>
+                                <div class="emoji" data-type="6">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>710</span></div>
+                                </div>
+                                <div class="emoji" data-type="7">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>697</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-post"><img class="mobile-mocup" src="images/app-hand-mocup.png">
+                        <div class="mobile-content">
+                            <div class="title">Keep OIGGIO in your pocket!</div>
+                            <div class="desc">Install our app on your smartphone so that OIGGIO is always with you
+                                wherever you are in the world.</div>
+                            <div class="download">
+                                <div class="item item--apk"><a href="/public/upload/file/OIGGIO-app-v1.05.apk"
+                                        data-download="apk" download>
+                                        <div class="icon"></div>
+                                        <div class="cnt">
+                                            <div class="dwn">Download</div>
+                                            <div class="what">Android APK</div>
+                                        </div>
+                                    </a></div>
+                                <div class="item item--googleplay item--soon"><a href="javascript:void(0);">
+                                        <div class="soon">Coming Soon</div>
+                                        <div class="icon"></div>
+                                        <div class="cnt">
+                                            <div class="dwn">Get It On</div>
+                                            <div class="what">Google Play</div>
+                                        </div>
+                                    </a></div>
+                                <div class="item item--appstore item--soon"><a href="javascript:void(0);">
+                                        <div class="soon">Coming Soon</div>
+                                        <div class="icon"></div>
+                                        <div class="cnt">
+                                            <div class="dwn">Download on the</div>
+                                            <div class="what">Apple Store</div>
+                                        </div>
+                                    </a></div>
+                                <div class="stat">
+                                    <div class="stat-icon"></div>
+                                    <div class="stat-content">
+                                        <div class="stat-count">54 605</div>
+                                        <div class="stat-desc">downloads</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="post">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="full">Dear players! Congratulations on the first day of spring and we wish that your
+                            gameplay is filled with bright moments and a mountain of gems. May the sun shine brighter
+                            and the birds sing louder to uplift your spirits and help you conquer the peaks of OIGGIO!
+                            Today we are pleased to announce the roadmap for spring 2023.</div>
+                        <h2 class="center">Directions of updates in OIGGIO:</h2>
+                        <div class="springroadmap-vectors">
+                            <div class="item">
+                                <div class="title">💬 Social</div>
+                                <div class="desc">The ability for social interaction will always be an integral part of
+                                    OIGGIO. The majority of updates in the spring roadmap will focus on social.</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">🎮 Gaming</div>
+                                <div class="desc">Improving and adding new mechanics to the gameplay will remain one of
+                                    the most priority and important tasks.</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">👨‍🦱 Personalization</div>
+                                <div class="desc">Each player should feel comfortable in OIGGIO. Customizing accounts,
+                                    profiles, and various settings will help achieve this.</div>
+                            </div>
+                        </div>
+                        <p class="full">It is important for us to convey the <mark>philosophy of OIGGIO</mark> to the
+                            players. Our priority is to create a powerful <mark>social service</mark>, where players can
+                            spend their time productively and earn rewards in a simple gaming format without having to
+                            invest any money.</p>
+                        <h2 class="center">Spring RoadMap:</h2>
+                        <div class="springroadmap-full">
+                            <div class="item"><img src="fonts/springroadmap-full-messenger.svg">
+                                <div class="title">Messenger</div>
+                                <div class="desc">The first stage in the development of social relationships within
+                                    OIGGIO — a system of personal messages for players to communicate with each other and
+                                    important system notifications.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-levels.svg">
+                                <div class="title">Level & Boosters System</div>
+                                <div class="desc">Implementation of a full-fledged level and experience system, which
+                                    will subsequently become the foundation for further updates of gameplay mechanics
+                                    based on it. Introduction of boosters — special items capable of boost your earning.
+                                </div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-leaders.svg">
+                                <div class="title">Leaderboard</div>
+                                <div class="desc">Introduction to the «Leaderboard» feature, a special mechanism that
+                                    can positively affect the income of the most active players in OIGGIO for various
+                                    types of activities.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-knowledge.svg">
+                                <div class="title">Knowledge Base</div>
+                                <div class="desc">Publication of a publicly accessible knowledge base, where in a simple
+                                    format every player or ordinary site visitor could learn more about the variety of
+                                    game mechanics.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-personalization.svg">
+                                <div class="title">Account Personalization</div>
+                                <div class="desc">Comprehensive update dedicated to personalizing your account: the
+                                    ability to set animated avatars, profile backgrounds, and many other useful
+                                    features.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-partner.svg">
+                                <div class="title">Affiliate Update</div>
+                                <div class="desc">Modernization of OIGGIO's affiliate program. A significant overhaul and
+                                    improvement of its functionality, which will be available to all game partners.
+                                </div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-eventmap.svg">
+                                <div class="title">Event Map</div>
+                                <div class="desc">Publication of a map of large-scale upcoming events for 2023. All
+                                    OIGGIO players will be able to participate in such events to receive valuable and
+                                    rare gifts and prizes.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-springevent.svg">
+                                <div class="title">Dragon Hunt</div>
+                                <div class="desc">Launch of the first large-scale event in the OIGGIO incremental
+                                    economic game. An excellent opportunity to gain fame and earn valuable gifts and
+                                    prizes.</div>
+                            </div>
+                            <div class="item"><img src="fonts/springroadmap-full-branch.svg">
+                                <div class="title">Second Game Zone</div>
+                                <div class="desc">An alternative game zone with special gameplay. In it, you can level
+                                    up heroes to perform special contracts and assignments to earn gems or
+                                    cryptocurrency.</div>
+                            </div>
+                        </div>
+                        <p class="springroadmap-info"><span class="icon"></span>In the roadmap, only major updates that
+                            require a separate post and a detailed breakdown of innovations are published. There will be
+                            many other, smaller updates in the spring that will not be included in the roadmap. All
+                            smaller updates will be communicated in changelogs or published on our social networks.</p>
+                        <p class="full full--final"><img class="final" src="fonts/roadmap-post-final.svg">We hope you
+                            enjoyed the list of updates we have prepared for this spring. The first update from the list
+                            will appear in OIGGIO in just a few days, so stay tuned to the news on the website or in the
+                            game's social networks. See you in the game!</p>
+                        <div class="actions">
+                            <div class="reactions">
+                                <div class="all">
+                                    <div class="value">15.3K+</div>
+                                    <div class="desc">Reactions</div>
+                                </div>
+                                <div class="emoji" data-type="2">
+                                    <div class="emoji__heart"></div>
+                                    <div class="count"><span>6.14K</span></div>
+                                </div>
+                                <div class="emoji" data-type="1">
+                                    <div class="emoji__hand">
+                                        <div class="emoji__thumb"></div>
+                                    </div>
+                                    <div class="count"><span>3.79K</span></div>
+                                </div>
+                                <div class="emoji" data-type="4">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>1.71K</span></div>
+                                </div>
+                                <div class="emoji" data-type="5">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>1.28K</span></div>
+                                </div>
+                                <div class="emoji" data-type="3">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth">
+                                            <div class="emoji__tongue"></div>
+                                        </div>
+                                    </div>
+                                    <div class="count"><span>993</span></div>
+                                </div>
+                                <div class="emoji" data-type="6">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>710</span></div>
+                                </div>
+                                <div class="emoji" data-type="7">
+                                    <div class="emoji__face">
+                                        <div class="emoji__eyebrows"></div>
+                                        <div class="emoji__eyes"></div>
+                                        <div class="emoji__mouth"></div>
+                                    </div>
+                                    <div class="count"><span>697</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="lead">
+            <div class="container">
+                <div class="lead-content">
+                    <div class="call">
+                        <h6 class="title">Join our community</h6>
+                        <div class="register">
+                            <div class="text">Not registered yet?</div>
+                            <div class="btn"><a href="/signup"><span><b>Signup</b></span></a></div>
+                        </div>
+                    </div>
+                    <div class="links"><a href="#" target="_blank">
+                            <div class="icon icon--channel"></div>
+                            <p>Official Telegram Channel</p>
+                        </a><a href="#" target="_blank">
+                            <div class="icon icon--chat"></div>
+                            <p>Official Telegram Chat</p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="top">
+                    <div class="side"><a class="logo" href="/"><img src="images/favicon-194x194.png"></a>
+                        <div class="text">OIGGIO.gg © 2023 All rights reserved.<br>An incremental game built on the «Play
+                            To Earn» concept where you can earn real money</div>
+                        <div class="ssl">
+                            <div class="icon"></div>EV SSL 256-Bit<br>RSA Encryption
+                        </div>
+                    </div>
+                    <div class="side">
+                        <div class="language">
+                            <div class="actual"><img src="fonts/en.svg"><span>English</span></div>
+                            <div class="list">
+                                <div class="scrollable">
+                                    <div class="item" data-enabled="1" data-lang="en"><img
+                                            src="fonts/en.svg"><span>English</span></div>
+                                    <div class="item" data-enabled="1" data-lang="es"><img
+                                            src="fonts/es.svg"><span>Español</span></div>
+                                    <div class="item" data-enabled="1" data-lang="pt"><img
+                                            src="fonts/pt.svg"><span>Portuguese</span></div>
+                                    <div class="item" data-enabled="1" data-lang="ru"><img
+                                            src="fonts/ru.svg"><span>Русский</span></div>
+                                    <div class="item" data-enabled="0" data-lang="cn"><img
+                                            src="fonts/cn_1.svg"><span>漢語</span></div>
+                                    <div class="item" data-enabled="0" data-lang="ar"><img
+                                            src="fonts/ar_1.svg"><span>اَلْعَرَبِيَّةُ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="side">
+                        <div class="links"><a class="item" href="/">Home</a><a class="item"
+                                href="/roadmap">RoadMap</a><a class="item" href="/contest">Contest</a><a class="item"
+                                href="/stat">Statistics</a><a class="item" href="/term">Rules</a><a class="item"
+                                href="/help">Help</a></div>
+                        <div class="ps">
+                            <div class="title">Payment systems used in OIGGIO:</div>
+                            <div class="list"><img src="fonts/visa.svg"><img src="fonts/mc.svg"><img
+                                    src="fonts/btc.svg"><img src="fonts/usdt.svg"><img src="fonts/ltc.svg"><img
+                                    src="fonts/doge.svg"><img src="fonts/bch.svg"></div>
+                        </div>
+                    </div>
+                    <div class="side"><a href="https://www.trustpilot.com/review/OIGGIO.gg" class="tp-widget"
+                            target="_blank">
+                            <div class="tp-logo"><img src="images/favicon-194x194.png"></div>
+                            <div class="tp-rating"><img src="fonts/tp-rating.svg"></div>
+                            <div class="info">Rating 4.7 | <span>250+ reviews</span></div>
+                        </a>
+                        <div class="apps"><img class="app-mocup" src="images/aside-mobile-mocup.png">
+                            <div class="app-title">Keep OIGGIO<br>in your pocket!</div><a class="app-goto"
+                                target="_blank" href="/apps">Download APK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>if (typeof global['config'] === 'undefined') global['config'] = {}; if (typeof global['config']['deposit'] === 'undefined') global['config']['deposit'] = {}; global['config']['deposit']['curs'] = '1000000'; if (typeof global['lang'] === 'undefined') global['lang'] = {}; if (typeof global['lang']['public'] === 'undefined') global['lang']['public'] = {}; if (typeof global['lang']['public']['pattern'] === 'undefined') global['lang']['public']['pattern'] = {}; if (typeof global['lang']['public']['pattern']['script'] === 'undefined') global['lang']['public']['pattern']['script'] = {}; global['lang']['public']['pattern']['script']['ago'] = 'ago'; global['lang']['public']['pattern']['script']['apply'] = 'Apply'; global['lang']['public']['pattern']['script']['close'] = 'Close'; global['lang']['public']['pattern']['script']['code-enter'] = 'Enter your master key'; global['lang']['public']['pattern']['script']['not-result'] = 'No results found';</script>
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/news-view.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/news-view.js"></script>
+</body>
+
+</html>

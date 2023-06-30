@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="all">
+    <meta name="format-detection" content="telephone=no">
+    <title>OIGGIO | Global contest</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="images/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/public/image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="fonts/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/public/image/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="js/l.js" async></script>
+</head>
+
+<body>
+    <style>
+        #mainloader,
+        body {
+            overflow: hidden
+        }
+
+        body,
+        html {
+            background: #050505
+        }
+
+        #mainloader {
+            background: #0c070a;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            text-align: center;
+            top: 0;
+            width: 100%;
+            z-index: 9999999
+        }
+
+        #mainloader .cssload-container {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 100%;
+            text-align: center
+        }
+
+        #mainloader .cssload-logo {
+            animation: 1.25s linear infinite forwards breath;
+            -o-animation: 1.25s linear infinite forwards breath;
+            -ms-animation: 1.25s linear 0s infinite normal forwards running breath;
+            -webkit-animation: 1.25s linear infinite forwards breath;
+            -moz-animation: 1.25s linear infinite forwards breath;
+            background: url(images/favicon-194x194.png) center center/contain no-repeat;
+            display: inline-block;
+            height: 150px;
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            top: -75px;
+            width: 150px
+        }
+
+        @keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-o-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-ms-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-moz-keyframes breath {
+
+            0%,
+            100% {
+                -moz-transform: scale(.9);
+                transform: scale(.9)
+            }
+
+            50% {
+                -moz-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <script>if (typeof global === 'undefined') global = {}; global['hash'] = 'Q21FdUE5RXRXUEc1dnFQNEdHbWNCNStKUUc0WVdtdERHZEZBTFlSbi9DWndib0VjOEJSTitKd0o0aDNILzUyRmJJYVd4cU5MbU52a2NDUkN5REtteFpUWmNmZ1NncCtNRjBTaEd0VXhZRWdJYmJLc09tcVBmUVlnai9nRE1QdFc='; global['time'] = 1687112497; setInterval(function () { ++global['time']; }, 1000);</script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "c03a8d4a-c2e5-49a8-a935-33d4d94eee52"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })(); CRISP_RUNTIME_CONFIG = { session_merge: true };</script>
+    <script
+        type="text/javascript">$crisp.push(["set", "session:data", ["Ident", "eaf24862-942b-472f-9197-d57f9a5e07af"]]);</script>
+    <div id="mainloader">
+        <div class="cssload-container">
+            <div class="cssload-logo"></div>
+        </div>
+    </div>
+    <script>if (typeof global['app'] === 'undefined') global['app'] = {}; if (typeof global['app']['user'] === 'undefined') global['app']['user'] = {}; global['app']['user']['auth'] = '0'; if (typeof global['url'] === 'undefined') global['url'] = {}; global['url']['profile'] = 'profile';</script>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="basic"><a class="logo" href="/"><img src="images/logo 2.png" alt="OIGGIO"></a>
+                        <div class="language">
+                            <div class="actual"><img src="fonts/en.svg" alt="en"><span>en</span></div>
+                            <div class="list">
+                                <div class="scrollable">
+                                    <div class="item" data-enabled="1" data-lang="en"><img
+                                            src="fonts/en.svg"><span>en</span></div>
+                                    <div class="item" data-enabled="1" data-lang="es"><img
+                                            src="fonts/es.svg"><span>es</span></div>
+                                    <div class="item" data-enabled="1" data-lang="pt"><img
+                                            src="fonts/pt.svg"><span>pt</span></div>
+                                    <div class="item" data-enabled="1" data-lang="ru"><img
+                                            src="fonts/ru.svg"><span>ru</span></div>
+                                    <div class="item" data-enabled="0" data-lang="cn"><img
+                                            src="fonts/cn.svg"><span>cn</span></div>
+                                    <div class="item" data-enabled="0" data-lang="ar"><img
+                                            src="fonts/ar_1.svg"><span>ar</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.49762 12H12.4976" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.49762 16.0017H16.4976" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.49731 7.99832H19.4973" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span>Navigation</span>
+                            <div class="list">
+                                <div class="items"><a class="item" href="/">Home</a><a class="item"
+                                        href="/roadmap">RoadMap</a><a class="item" href="/contest">Contest</a><a
+                                        class="item" href="/stat">Statistics</a><a class="item" href="/term">Rules</a><a
+                                        class="item" href="/help">Help</a></div>
+                            </div>
+                        </div>
+                        <div class="withdrawals">
+                            <div class="icon"></div>
+                            <div class="other"><a href="/stat">Payouts</a>
+                                <div class="total">Total $275945.02</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div class="btn btn--login"><a href="/auth">Login</a></div>
+                        <div class="btn btn--register"><a href="/signup">Signup</a></div>
+                        <div class="mobile-trigger">
+                            <div class="icon"><span></span><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="mobile-shell">
+                        <div class="mobile-btns">
+                            <div class="btn btn--register"><a href="/signup">Signup</a></div>
+                            <div class="btn btn--login"><a href="/auth">Login to Account</a></div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="li-earned"><a class="title" href="/">
+                                        <div class="icon icon--home"></div>Home
+                                    </a></li>
+                                <li><a class="title" href="/roadmap">
+                                        <div class="icon icon--roadmap"></div>RoadMap
+                                    </a></li>
+                                <li><a class="title" href="/contest">
+                                        <div class="icon icon--contest"></div>Contest
+                                    </a></li>
+                                <li><a class="title" href="/stat">
+                                        <div class="icon icon--stat"></div>Statistics
+                                    </a></li>
+                                <li><a class="title" href="/term">
+                                        <div class="icon icon--terms"></div>Rules
+                                    </a></li>
+                                <li><a class="title" href="/help">
+                                        <div class="icon icon--help"></div>Help
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="no-lang" data-lang="cn">
+            <div class="shell"><img src="fonts/cn_1.svg">
+                <div class="title">目前中文语言不可用...</div>
+                <div class="text">我们已经开始在网站上添加中文语言。我们一定会在添加完成后告知所有玩家。</div><a href="javascript:void(0)"
+                    data-action="close">好的，我会等待</a>
+            </div>
+        </div>
+        <div class="no-lang" data-lang="ar">
+            <div class="shell"><img src="fonts/ar.svg">
+                <div class="title">اللغة العربية غير متاحة حاليا...</div>
+                <div class="text">نحن نعمل بالفعل على إضافة اللغة العربية إلى الموقع. سنخبر بالتأكيد جميع اللاعبين عندما
+                    نضيفها.</div><a href="javascript:void(0)" data-action="close">حسنا، سأنتظر</a>
+            </div>
+        </div>
+        <div class="content">
+            <section class="contest">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="trophy"><img src="images/contest-trophy-left.png"><img
+                                src="images/contest-trophy-right.png"></div>
+                        <div class="title">
+                            <div class="shell">
+                                <h1>Global contest #<span>5</span></h1>
+                            </div>
+                            <div class="history">
+                                <div class="item" data-id="1">#1</div>
+                                <div class="item" data-id="2">#2</div>
+                                <div class="item" data-id="3">#3</div>
+                                <div class="item" data-id="4">#4</div>
+                                <div class="item" data-id="5">Active</div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="prize">
+                                <div class="number"><span>$</span></div>
+                                <div class="number"><span>2</span></div>
+                                <div class="number"><span>5</span></div>
+                                <div class="number"><span>0</span></div>
+                                <div class="number"><span>0</span></div>
+                            </div>
+                            <div class="desc">Monthly in the global contest we give away<br><b>millions</b> gems among
+                                <b>20</b> <b>OIGGIO</b> players</div><a class="accept"
+                                href="/signup"><span><b>Participate!</b></span></a>
+                            <div class="accept accept--terms" data-accept="terms"><span><b>Contest conditions</b></span>
+                            </div>
+                            <div class="accept accept--pts active" data-accept="pts"><span><b>Point accrual</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="information">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="cell cell--place">
+                            <div class="actual"><span>0</span>
+                                <div>points</div>
+                            </div>
+                            <div class="place">you are in <span>--</span> place in the participant table</div>
+                        </div>
+                        <div class="cell cell--terms" data-accept-content="terms">
+                            <h2 class="title">Contest conditions:</h2>
+                            <div class="how">
+                                <div class="line">All players participate in the contest</div>
+                                <div class="line">Prizes are credited immediately after completion</div>
+                                <div class="line">Contest started <span>01-06-2023 at 19:00 UTC+1</span></div>
+                                <div class="line">Contest will end <span>01-07-2023 at 19:00 UTC+1</span></div>
+                            </div>
+                        </div>
+                        <div class="cell cell--pts active" data-accept-content="pts">
+                            <h2 class="title">How to earn points?</h2>
+                            <div class="how">
+                                <div class="line"><span>1</span> point for every $ of your deposit<i
+                                        title="<b>EXAMPLE:</b><br>You made a deposit for a total of <b>$68.92</b> and in this way you immediately received <b>68.92 points</b> in the contest"></i>
+                                </div>
+                                <div class="line"><span>0.25</span> points for every $ deposit of a referral<i
+                                        title="<b>EXAMPLE:</b><br>Your first-level referral made a deposit for a total of <b>$60</b> and as a result, you received <b>15 points</b> in the contest"></i>
+                                </div>
+                                <div class="line"><span>0.15</span> points for every $ you payout<i
+                                        title="<b>EXAMPLE:</b><br>You made a payout of <b>$100</b> and immediately after that you received <b>15 points</b> in the contest"></i>
+                                </div>
+                                <div class="line"><span>0.05</span> points for viewing a link in surfing</div>
+                            </div>
+                        </div>
+                        <div class="cell cell--timer">
+                            <div class="end">Until the end:</div>
+                            <div class="counter" data-timer="12:23:38:23">
+                                <div class="item item--day">
+                                    <div class="value">--</div>
+                                    <div class="desc">days</div>
+                                </div>
+                                <div class="item item--hour">
+                                    <div class="value">--</div>
+                                    <div class="desc">hours</div>
+                                </div>
+                                <div class="item item--minute">
+                                    <div class="value">--</div>
+                                    <div class="desc">minuts</div>
+                                </div>
+                                <div class="item item--second">
+                                    <div class="value">--</div>
+                                    <div class="desc">seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rating">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-title">
+                            <div class="inside">
+                                <h3>Leaderboard</h3>
+                            </div>
+                        </div>
+                        <div class="shell">
+                            <div class="table-wrap">
+                                <div class="table-bg">
+                                    <div class="bg-item"></div>
+                                    <div class="bg-item" style="--delay:225ms;"></div>
+                                    <div class="bg-item" style="--delay:300ms;"></div>
+                                    <div class="bg-item" style="--delay:375ms;"></div>
+                                    <div class="bg-item" style="--delay:450ms;"></div>
+                                    <div class="bg-item" style="--delay:525ms;"></div>
+                                    <div class="bg-item" style="--delay:600ms;"></div>
+                                    <div class="bg-item" style="--delay:675ms;"></div>
+                                    <div class="bg-item" style="--delay:750ms;"></div>
+                                    <div class="bg-item" style="--delay:825ms;"></div>
+                                    <div class="bg-item" style="--delay:900ms;"></div>
+                                    <div class="bg-item" style="--delay:975ms;"></div>
+                                    <div class="bg-item" style="--delay:1050ms;"></div>
+                                    <div class="bg-item" style="--delay:1125ms;"></div>
+                                    <div class="bg-item" style="--delay:1200ms;"></div>
+                                    <div class="bg-item" style="--delay:1275ms;"></div>
+                                    <div class="bg-item" style="--delay:1350ms;"></div>
+                                    <div class="bg-item" style="--delay:1425ms;"></div>
+                                    <div class="bg-item" style="--delay:1500ms;"></div>
+                                    <div class="bg-item" style="--delay:1575ms;"></div>
+                                    <div class="bg-item" style="--delay:1625ms;"></div>
+                                </div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Place</th>
+                                            <th>Player</th>
+                                            <th>Points</th>
+                                            <th>Prize</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/cf300733-9bfd-4e99-8645-dfb0bf6ca04f.jpg"><span>mabell</span>
+                                                </div>
+                                            </td>
+                                            <td><span>10 950</span> points</td>
+                                            <td>$ <span>1000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/305b3762-a819-424f-8aca-4f2b8e9e0032.jpg"><span>Guilhermesampaiosantos</span>
+                                                </div>
+                                            </td>
+                                            <td><span>10 224</span> points</td>
+                                            <td>$ <span>500</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>Kilozar</span>
+                                                </div>
+                                            </td>
+                                            <td><span>8 235</span> points</td>
+                                            <td>$ <span>250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/fa738954-6202-4840-8bd0-6cf27565f626.jpg"><span>oldstalker</span>
+                                                </div>
+                                            </td>
+                                            <td><span>5 002</span> points</td>
+                                            <td>$ <span>150</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/4b61a929-54e8-4f5e-999b-79d9ad0654e6.jpg"><span>mikctic</span>
+                                                </div>
+                                            </td>
+                                            <td><span>5 000</span> points</td>
+                                            <td>$ <span>100</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/d21775ab-26d0-4ea8-aaab-c908e595bfd1.jpg"><span>elina</span>
+                                                </div>
+                                            </td>
+                                            <td><span>4 306</span> points</td>
+                                            <td>$ <span>50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>M4roquinhoo</span>
+                                                </div>
+                                            </td>
+                                            <td><span>4 006</span> points</td>
+                                            <td>$ <span>50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>Nesky</span></div>
+                                            </td>
+                                            <td><span>3 358</span> points</td>
+                                            <td>$ <span>50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>laisinha01</span>
+                                                </div>
+                                            </td>
+                                            <td><span>3 253</span> points</td>
+                                            <td>$ <span>50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>kimling</span>
+                                                </div>
+                                            </td>
+                                            <td><span>3 188</span> points</td>
+                                            <td>$ <span>50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/4d8e0c7f-60e3-4617-a538-9c980426f77d.jpg"><span>lordman</span>
+                                                </div>
+                                            </td>
+                                            <td><span>3 000</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/da248acc-6257-41ac-aa32-88d343ad9317.jpg"><span>mitchell</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 850</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/38f40702-3ce3-425a-8045-cb45211dac39.jpg"><span>TomyyCA</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 835</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/b16a8f55-1a4f-4303-8dad-7ebff262ca28.jpg"><span>Alexiis</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 559</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/028e51ed-ba21-4653-9395-ebf7e76efd63.jpg"><span>MinhKha</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 103</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>Laterkill</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 097</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>vitali09</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 019</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img
+                                                        src="images/64a006c1-f546-4105-8ddb-78059c40dace.jpg"><span>Mimiko75</span>
+                                                </div>
+                                            </td>
+                                            <td><span>2 010</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>Marcosultra</span>
+                                                </div>
+                                            </td>
+                                            <td><span>1 907</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td>
+                                                <div class="user"><img src="images/default.jpg"><span>Moreze</span>
+                                                </div>
+                                            </td>
+                                            <td><span>1 898</span> points</td>
+                                            <td>$ <span>25</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="lead">
+            <div class="container">
+                <div class="lead-content">
+                    <div class="call">
+                        <h6 class="title">Join our community</h6>
+                        <div class="register">
+                            <div class="text">Not registered yet?</div>
+                            <div class="btn"><a href="/signup"><span><b>Signup</b></span></a></div>
+                        </div>
+                    </div>
+                    <div class="links"><a href="#" target="_blank">
+                            <div class="icon icon--channel"></div>
+                            <p>Official Telegram Channel</p>
+                        </a><a href="#" target="_blank">
+                            <div class="icon icon--chat"></div>
+                            <p>Official Telegram Chat</p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="top">
+                    <div class="side"><a class="logo" href="/"><img src="images/LOGO1.png"></a>
+                        <div class="text">OIGGIO.gg © 2023 All rights reserved.<br>An incremental game built on the «Play
+                            To Earn» concept where you can earn real money</div>
+                        <div class="ssl">
+                            <div class="icon"></div>EV SSL 256-Bit<br>RSA Encryption
+                        </div>
+                    </div>
+                    <div class="side">
+                        <div class="language">
+                            <div class="actual"><img src="fonts/en.svg"><span>English</span></div>
+                            <div class="list">
+                                <div class="scrollable">
+                                    <div class="item" data-enabled="1" data-lang="en"><img
+                                            src="fonts/en.svg"><span>English</span></div>
+                                    <div class="item" data-enabled="1" data-lang="es"><img
+                                            src="fonts/es.svg"><span>Español</span></div>
+                                    <div class="item" data-enabled="1" data-lang="pt"><img
+                                            src="fonts/pt.svg"><span>Portuguese</span></div>
+                                    <div class="item" data-enabled="1" data-lang="ru"><img
+                                            src="fonts/ru.svg"><span>Русский</span></div>
+                                    <div class="item" data-enabled="0" data-lang="cn"><img
+                                            src="fonts/cn.svg"><span>漢語</span></div>
+                                    <div class="item" data-enabled="0" data-lang="ar"><img
+                                            src="fonts/ar_1.svg"><span>اَلْعَرَبِيَّةُ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="side">
+                        <div class="links"><a class="item" href="/">Home</a><a class="item"
+                                href="/roadmap">RoadMap</a><a class="item" href="/contest">Contest</a><a class="item"
+                                href="/stat">Statistics</a><a class="item" href="/term">Rules</a><a class="item"
+                                href="/help">Help</a></div>
+                        <div class="ps">
+                            <div class="title">Payment systems used in OIGGIO:</div>
+                            <div class="list"><img src="fonts/visa.svg"><img src="fonts/mc.svg"><img
+                                    src="fonts/btc.svg"><img src="fonts/usdt.svg"><img src="fonts/ltc.svg"><img
+                                    src="fonts/doge.svg"><img src="fonts/bch.svg"></div>
+                        </div>
+                    </div>
+                    <div class="side"><a href="https://www.trustpilot.com/review/OIGGIO.gg" class="tp-widget"
+                            target="_blank">
+                            <div class="tp-logo"><img src="images/LOGO1.png"></div>
+                            <div class="tp-rating"><img src="fonts/tp-rating.svg"></div>
+                            <div class="info">Rating 4.7 | <span>250+ reviews</span></div>
+                        </a>
+                        <div class="apps"><img class="app-mocup" src="images/aside-mobile-mocup.png">
+                            <div class="app-title">Keep OIGGIO<br>in your pocket!</div><a class="app-goto"
+                                target="_blank" href="/apps">Download APK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>if (typeof global['config'] === 'undefined') global['config'] = {}; if (typeof global['config']['deposit'] === 'undefined') global['config']['deposit'] = {}; global['config']['deposit']['curs'] = '1000000'; if (typeof global['lang'] === 'undefined') global['lang'] = {}; if (typeof global['lang']['public'] === 'undefined') global['lang']['public'] = {}; if (typeof global['lang']['public']['pattern'] === 'undefined') global['lang']['public']['pattern'] = {}; if (typeof global['lang']['public']['pattern']['script'] === 'undefined') global['lang']['public']['pattern']['script'] = {}; global['lang']['public']['pattern']['script']['ago'] = 'ago'; global['lang']['public']['pattern']['script']['apply'] = 'Apply'; global['lang']['public']['pattern']['script']['close'] = 'Close'; global['lang']['public']['pattern']['script']['code-enter'] = 'Enter your master key'; global['lang']['public']['pattern']['script']['not-result'] = 'No results found';</script>
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contest.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/contest.js"></script>
+</body>
+
+</html>
